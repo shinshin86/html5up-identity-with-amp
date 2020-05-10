@@ -811,7 +811,21 @@
 		</style>
 	</head>
 	<body>
-
+		<!-- reference: https://support.google.com/analytics/answer/7486764?hl=en -->
+		<amp-analytics type="gtag" data-credentials="include">
+			<script type="application/json">
+			 {
+			   "vars": {
+				 "gtag_id": "{Google Analytics ID}",
+				   "config": {
+					 "{Google Analytics ID}": {
+					   "groups": "default"
+					 }
+				   }
+			   }
+			 }
+			</script>
+		</amp-analytics>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
